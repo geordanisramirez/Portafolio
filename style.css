@@ -1,33 +1,80 @@
+/*Custom properties*/
+:root {
+  --firts-color: var(--gray-default, #fff);
+  --second-color: var(--gray-50, #f9fafb);
+  --third-color: var(--gray-100, #f3f4f6);
+  --four-color: var(--gray-200, #e5e7eb);
+  --five-color: var(--gray-300, #d1d5db);
+  --six-color: var(--gray-400, #9ca3af);
+  --seven-color: var(--gray-500, #6b7280);
+  --eight-color: var(--gray-600, #4b5563);
+  --nine-color: var(--gray-700, #374151);
+  --ten-color: var(--gray-800, #1f2937);
+  --eleven-color: var(--gray-900, #111827);
+  --twelve-color: var(--gray-950, #030712);
+  --emerald-color: var(--emerald-500, #10b981);
+}
+/*Reset*/
 body {
 }
+/*Components*/
+/*Utilities*/
+/*Site Style*/
 
-/*---- Custom properties----*/
-/*----Reset----*/
-/*----Components----*/
-/*----Uilities----*/
-/*----Site Styles----*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 .container {
   width: 100%;
+  color: var(--firts-color);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/*.di-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}*/
+.css-img {
+  margin-left: 0%;
+}
 .nav {
-  height: 50%;
-  justify-content: right;
+  display: inline-block;
 }
-
-.di-flex {
-  display: flex;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 10px;
-}
-
-.list {
-  margin: 24px;
+.nav a {
   text-decoration: none;
+  margin: 10px;
+}
+.menu-open {
+  display: none;
+}
+.menu-close {
+  display: none;
+}
+.icon-sol {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .menu-open {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .nav a {
+    display: none;
+  }
+  .icon-sol {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+}
+
+@media screen (max-width: 428px) {
 }
