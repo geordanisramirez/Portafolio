@@ -1,80 +1,162 @@
-/*Custom properties*/
-:root {
-  --firts-color: var(--gray-default, #fff);
-  --second-color: var(--gray-50, #f9fafb);
-  --third-color: var(--gray-100, #f3f4f6);
-  --four-color: var(--gray-200, #e5e7eb);
-  --five-color: var(--gray-300, #d1d5db);
-  --six-color: var(--gray-400, #9ca3af);
-  --seven-color: var(--gray-500, #6b7280);
-  --eight-color: var(--gray-600, #4b5563);
-  --nine-color: var(--gray-700, #374151);
-  --ten-color: var(--gray-800, #1f2937);
-  --eleven-color: var(--gray-900, #111827);
-  --twelve-color: var(--gray-950, #030712);
-  --emerald-color: var(--emerald-500, #10b981);
-}
-/*Reset*/
-body {
-}
-/*Components*/
-/*Utilities*/
-/*Site Style*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-
-.container {
-  width: 100%;
-  color: var(--firts-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.defaul {
+  color: #ffffff;
 }
-
-/*.di-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}*/
-.css-img {
-  margin-left: 0%;
+.gray-50 {
+  color: #f9fafb;
 }
-.nav {
-  display: inline-block;
+.gray-100 {
+  color: #f3f4f6;
 }
-.nav a {
-  text-decoration: none;
-  margin: 10px;
+.gray-200 {
+  color: #e5e7eb;
 }
-.menu-open {
-  display: none;
+.gray-300 {
+  color: #d1d5db;
 }
-.menu-close {
-  display: none;
+.gray-400 {
+  color: #9ca3af;
 }
-.icon-sol {
+.gray-500 {
+  color: #6b7280;
 }
-
-@media screen and (max-width: 1024px) {
+.gray-600 {
+  color: #4b5563;
 }
-
-@media screen and (max-width: 768px) {
-  .menu-open {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  .nav a {
-    display: none;
-  }
-  .icon-sol {
-    display: none;
-  }
-  .button {
-    display: none;
-  }
+.gray-700 {
+  color: #374151;
 }
-
-@media screen (max-width: 428px) {
+.gray-800 {
+  color: #1f2937;
+}
+.gray-900 {
+  color: #111827;
+}
+.gray-950 {
+  color: #030712;
+}
+.emerald-500 {
+  color: #10b981;
+}
+.h1-mobile {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.h1-tablet {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+.h1-desktop {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+.h2-mobile-tablet {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  font-weight: 600;
+}
+.h2-desktop {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -2%;
+  font-weight: 600;
+}
+.h3-mobile-tablet-semi-bold {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  font-weight: 600;
+}
+.h3-mobile-tablet-bold {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+.h3-desktop-semi {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  font-weight: 600;
+}
+.h3-desktop-bold {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+.subtitle-mobile-tablet-normal {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.subtitle-mobile-tablet-semi {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.subtitle-all-screen-normal {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.subtitle-all-screen-semi {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.body-1-mobile-tablet {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.body-1-desktop {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.body-2-all-screen-normal {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.body-2-all-screen-underline {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.body-2-all-screen-medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.body-2-all-screen-semi {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.body-3-all-screen-normal {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.body-3-all-screen-medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.icons-sm {
+  width: 24px;
+  height: 24px;
+}
+.icons-md {
+  width: 32px;
+  height: 32px;
 }
